@@ -30,3 +30,16 @@
     transform: rotate(360deg);
   }
 }
+
+main {
+  padding: 2-px;
+}
+
+.hero {
+  border: 1px solid gray;
+  display: inline-block;
+  width: 250px;
+  height: 200px;
+  margin: 6px;
+  background-color: springgreen
+}

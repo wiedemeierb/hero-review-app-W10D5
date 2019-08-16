@@ -6,6 +6,7 @@ class HeroList extends Component {
         // GOAL TO PUT OUR LIST ON HEROS ON THE DOM
         //COPY AND PASTED FROM APP.JS ALL THE RENDER ITEMS
         //props below
+        //then copy/paste to SuperHeroList
         let listOfHeros = this.props.taco.map((hero) => {
             return (
                 // taco={variable defined in our listOfHeros, hero}

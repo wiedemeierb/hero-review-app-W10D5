@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.css';  //since loaded in the parent, all the styles load down
 import Header from '../Header/Header';
 import HeroList from '../HeroList/HeroList'
 import SuperHeroItem from '../SuperHeroItem/SuperHeroItem'
@@ -17,12 +17,14 @@ class App extends Component {
         alias: 'Barry Allen',
         power: 'Super Speed',
         onDuty: true,
+        
       },
       {
         superheroName: 'Batman',
         alias: 'Bryce Wayne',
         power: 'Rich',
-        onDuty: true,
+        onDuty: false,
+        
       }
     ],
   }
@@ -45,7 +47,11 @@ class App extends Component {
         {/* need to call the variable, made above, in our return, listOfHeros */}
         {/* heroList on left is taco —> heroList on right is array within our state */}
         {/* props started */}
+        <main>
+        {/* created for styling */}
         <HeroList taco = {this.state.heroList} />
+        
+        </main>
       </div>
     )
   }
