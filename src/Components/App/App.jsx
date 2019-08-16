@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from '../Header/Header';
+import HeroList from '../HeroList/HeroList'
 
 class App extends Component {
 
@@ -31,18 +32,7 @@ class App extends Component {
     // this.state.array within state.map( () => )
     //.map loops over everything in array
     // every time through the loop we need to name the specific item --here its hero
-    let listOfHeros = this.state.heroList.map( (hero) => {
-        //need to return here some jsx thats going on DOM
-        return(
-          <div>
-            {/* //looking for item, which is hero as defined above */}
-            <h2>{hero.superheroName}</h2>
-            <p>Alias : {hero.alias}</p>
-            <p>Power : {hero.power}</p>
-          </div>
-        )
-    });
-    
+    // COPY/PASTED INTO HEROLIST.JSX AS A COMPONENT
     //JSX
     return (
       <div className="App">
@@ -52,7 +42,9 @@ class App extends Component {
         <Header />
         {/* getting state on the DOM; .map here as well if you want*/}
         {/* need to call the variable, made above, in our return, listOfHeros */}
-        {listOfHeros}
+        {/* heroList on left is taco —> heroList on right is array within our state */}
+        {/* props started */}
+        <HeroList taco = {this.state.heroList} />
       </div>
     )
   }
