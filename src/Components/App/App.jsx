@@ -29,6 +29,22 @@ class App extends Component {
     ],
   }
 
+  // //just like $(document).ready()
+  // //when ready, get data from server, and put on DOM
+  // componentDidMount() {
+  //   console.log('App is Loaded');
+  //   this.getData();
+  // }
+  // //creating new function because we are getting data quite often, not just on pageload
+  // getData() {
+  //   //make get request here
+  //   this.setState({
+  //     //taking array
+  //     heroList: [] //get response of data
+  //   });
+  // }
+
+
   render () {
     // can map up here to a variable
     // javascript land up here(if/else), in return its jsx flavor javascript
