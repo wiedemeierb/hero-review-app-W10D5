@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from '../Header/Header';
 import HeroList from '../HeroList/HeroList'
+import SuperHeroItem from '../SuperHeroItem/SuperHeroItem'
 
 class App extends Component {
 

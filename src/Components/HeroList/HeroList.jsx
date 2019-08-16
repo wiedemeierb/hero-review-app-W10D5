@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import SuperHeroItem from '../SuperHeroItem/SuperHeroItem'
 
 class HeroList extends Component {
     render() {
@@ -8,11 +8,8 @@ class HeroList extends Component {
         //props below
         let listOfHeros = this.props.taco.map((hero) => {
             return (
-                <div>
-                    <h2>{hero.superheroName}</h2>
-                    <p>Alias : {hero.alias}</p>
-                    <p>Power : {hero.power}</p>
-                </div>
+                // taco={variable defined in our listOfHeros, hero}
+               <SuperHeroItem hero={hero}/>
             )
         });
         // JSX on the DOM
